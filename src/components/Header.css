@@ -1,0 +1,70 @@
+.header {
+  width: 100%;
+}
+
+.header-greeting {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-logo-left,
+.header-logo-right {
+  flex-shrink: 0;
+}
+
+.header-logo-left img,
+.header-logo-right img {
+  display: block;
+  height: 120px;
+}
+
+.header-tabs {
+  display: flex;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.tab {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--text);
+  border-right: 1px solid var(--border);
+}
+
+.tab:last-child {
+  border-right: none;
+}
+
+&:hover {
+  opacity: 0.85;
+}
+
+.tab-active {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .header-tabs {
+    flex-wrap: wrap;
+  }
+
+  .header-title {
+    font-size: 1.75rem;
+  }
+}

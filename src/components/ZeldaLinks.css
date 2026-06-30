@@ -1,0 +1,37 @@
+.zelda-links {
+  border: 1px solid var(--border);
+}
+
+.zelda-links-title {
+  padding: 0.5rem 0.75rem;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.zelda-links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.75rem;
+  gap: 0.5rem;
+}
+
+.zelda-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text);
+  width: 80px;
+}
+
+.zelda-link-img {
+  width: 64px;
+  height: 64px;
+  border: 1px solid var(--border);
+}
+
+.zelda-link-label {
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 0.25rem;
+}
