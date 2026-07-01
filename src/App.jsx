@@ -9,11 +9,13 @@ import Records from './pages/Records.jsx'
 import WWE from './pages/WWE.jsx'
 import Notes from './pages/Notes.jsx'
 import './App.css'
+import mariobg from './assets/mariobg.png'
 
 export default function App() {
   return (
     <div className="app">
       <Header />
+      <div className="background" style={{ backgroundImage: `url(${mariobg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center bottom', position: 'fixed', top: 0, left: 0, right: 0, bottom: -60, zIndex: -1 }}></div>
       <div className="app-body">
         <Sidebar />
         <main className="app-main">

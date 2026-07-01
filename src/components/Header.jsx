@@ -1,5 +1,6 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import './Header.css'
+import banner from '../assets/banner.png'
 
 const tabs = [
   { label: 'Home', path: '/' },
@@ -17,13 +18,9 @@ export default function Header() {
         Hello James, for England...
       </div>
       <div className="header-logo">
-        <div className="header-logo-left">
-          <img src="" alt="left character" />
-        </div>
-        <h1 className="header-title">Game Library</h1>
-        <div className="header-logo-right">
-          <img src="" alt="right character" />
-        </div>
+        <Link to="/" className="header-banner-link">
+          <img src={banner} alt="Game Library" className="header-banner-img" />
+        </Link>
       </div>
       <nav className="header-tabs">
         {tabs.map((tab) => (
