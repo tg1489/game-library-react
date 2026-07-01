@@ -36,7 +36,7 @@
 }
 
 .header-tabs {
-  background-color: #ab3939;
+  background: linear-gradient(to bottom, #963131, #ab3939 40%, #ab3939 60%, #963131);
   margin-left: auto;
   margin-right: auto;
   width: 1168px;
@@ -59,9 +59,9 @@
   width: 80px;
   text-align: center;
   border-radius: 0;
-  border: #ab3939;
-  border-left: 1px solid #873838;
-  border-right: 0 solid #873838;
+  border-top: none;
+  border-left: none;
+  border-right: 1px solid #873838;
   background-color: #ab3939;
   color: #FFF;
   text-shadow: #000 1px 0 1px;
@@ -74,10 +74,22 @@
   transition: background-color 0.3s;
 }
 
+.nav-button:first-child {
+  border-left: 1px solid #873838;
+}
+
 .nav-button:hover {
   background-color: #000;
   opacity: 40%;
   z-index: 9999;
+}
+
+.header-shadow-panel {
+  position: relative;
+  width: 1178px;
+  margin: 0 auto;
+  border-top: 1px solid #000;
+  box-shadow: 1px 0 5px -4px black, -1px 0 5px -4px black;
 }
 
 .tab-active {

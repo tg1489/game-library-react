@@ -34,6 +34,7 @@ export default function Header() {
           </NavLink>
         ))}
       </nav>
+      <div className="header-shadow-panel"></div>
     </header>
   )
 }
