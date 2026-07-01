@@ -22,7 +22,6 @@
   display: flex;
   justify-content: center;
   background-color: white;
-  padding: 1rem;
   box-shadow: 1px 0 15px -4px black, -1px 0 8px -4px black;
 }
 
@@ -41,6 +40,8 @@
   max-width: 1168px;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid #000;
+  border-bottom: none;
   height: 34px;
   line-height: 1.2;
   padding-left: 10px;
