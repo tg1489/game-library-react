@@ -10,6 +10,7 @@
 .app-body {
   display: flex;
   flex: 1;
+  box-shadow: 1px 0 15px -4px black, -1px 0 8px -4px black;
 }
 
 .app-main {
