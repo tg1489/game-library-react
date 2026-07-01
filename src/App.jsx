@@ -8,6 +8,7 @@ import Year from './pages/Year.jsx'
 import Records from './pages/Records.jsx'
 import WWE from './pages/WWE.jsx'
 import Notes from './pages/Notes.jsx'
+import ZeldaLinks from './components/ZeldaLinks.jsx'
 import './App.css'
 import mariobg from './assets/mariobg.png'
 
@@ -27,6 +28,7 @@ export default function App() {
             <Route path="/wwe" element={<WWE />} />
             <Route path="/notes" element={<Notes />} />
           </Routes>
+          <ZeldaLinks />
         </main>
       </div>
       <Footer />

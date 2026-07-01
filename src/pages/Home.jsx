@@ -1,5 +1,4 @@
 import './Banner.css'
-import ZeldaLinks from '../components/ZeldaLinks.jsx'
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <ZeldaLinks />
     </div>
   )
 }
