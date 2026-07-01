@@ -35,17 +35,33 @@
 }
 
 .sidebar-section-title {
-  padding: 0.5rem 0.75rem;
-  margin: 0;
-  font-size: 0.95rem;
+  background: linear-gradient(to bottom, #963131, #ab3939 40%, #ab3939 60%, #963131);
+  box-shadow: 1px 0 4px -4px #fd6b6b, var(--shadow);
+  color: rgb(238, 238, 238);
+  font-family: "Roboto Condensed", Rockwell, serif;
+  font-size: 18px;
+  line-height: 25.2px;
+  margin-top: 0px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  position: relative;
   text-align: center;
+  text-shadow: rgb(34, 34, 34) 1px 1px 2px;
 }
 
 .sidebar-list {
   list-style: disc;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
   margin: 0;
-  font-size: 0.9rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(34, 34, 34);
+  font-family: Rockwell, serif;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
 }
 
 .sidebar-list li {
@@ -53,7 +69,7 @@
 }
 
 .sidebar-list a {
-  color: var(--text);
+  color: rgb(34, 34, 34);
   text-decoration: underline;
 }
 
