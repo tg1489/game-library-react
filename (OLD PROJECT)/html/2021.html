@@ -1,0 +1,418 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<!-- HEADING + CSS-->
+<head>
+  <meta charset="utf-8">
+  <title>2021</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+
+  <link rel="stylesheet" href="css/years.css">
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <!--  <link rel="stylesheet" href="css/vgstyle.css">-->
+  <link rel="icon" href="img/triforce.png">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- TOP BAR HELLO JAMES-->
+<div class="top-bar" role="banner">
+  <div id="top-bar-info">
+    <span id="site-description">Hello James, for England...</span>
+  </div>
+
+</div>
+
+<!-- SITE BANNER MAIN LOGO -->
+<div class="banner"><a href="index.html">
+  <img src="img/banner.png" alt="Site Banner">
+</a></div>
+
+<!-- BELOW BANNER -->
+<div class="below-banner"></div>
+
+
+
+<!-- NAV BAR TOP + BUTTONS ----------------------------------------------->
+<div class="navigation-bar">
+  <nav class="nav-main" role="navigation" >
+
+    <!-- HOME BUTTON -->
+    <button class="nav-button" onclick="homeClick()">
+      Home
+    </button>
+    <!------------------------------------------>
+
+    <!-- ADD BUTTON -->
+    <button id="add-game" onclick="addClick()" class="nav-button2">
+      Add
+    </button>
+    <!---------------------------------------------------->
+
+    <!-- YEAR BUTTON + DROPDOWN MENU -->
+
+    <button id="year" class="nav-button3">
+      Year
+      <div class="dropdown-menu">
+        <a href="2016.html">2016</a>
+        <a href="2017.html">2017</a>
+        <a href="2018.html">2018</a>
+        <a href="2019.html">2019</a>
+        <a href="2020.html">2020</a>
+        <a href="2021.html">2021</a>
+        <a href="2022.html">2022</a>
+        <a href="2023.html">2023</a>
+      </div>
+    </button>
+
+    <!--------------------------------------------------->
+
+    <!-- RECORD BUTTON -->
+    <button id="records" onclick="recordsClick()" class="nav-button4">
+      Records
+    </button>
+    <!---------------------------------------------------->
+
+
+
+    <!-- WWE BUTTON -->
+    <button id="wwe" class="nav-button5" onclick="underConstruction()">
+      WWE
+    </button>
+    <!------------------------------- onclick="underConstruction()"--------------------->
+
+    <!-- Notes -->
+    <button id="notes" class="nav-button6" onclick="notesClick()">
+      Notes
+    </button>
+    <!---------------------------------------------------->
+
+  </nav>
+</div>
+
+
+
+
+
+<!-- SHADOW PANEL -->
+<div class="shadow-panel">
+
+</div>
+
+
+
+
+<div class="main-panel">
+  <!-- LEFT SIDE -->
+  <div class="left-side">
+    <!-- SEARCH BAR -->
+    <div class="search-bar">
+
+      <h3 class="search"></h3> <!--This is the entire border<-->
+
+      <form role="search" method="get" class="search-form" action="https://index.html/">
+        <label>
+          <span class="screen-reader-text"></span>
+          <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+        </label>
+        <input type="submit" class="search-submit" value="Search">
+      </form>
+    </div>
+
+    <!-- GAME IDEAS -->
+
+    <div class="game-ideas-container">
+      <div class="game-ideas-bar">
+        <h3 class="game-ideas-font">Game Ideas</h3>
+
+      </div>
+    <div class="game-ideas-list">
+      <ul>
+        <li class="list-space">
+          <a class="nes-font" href="NES.html">Nintendo</a>
+        </li>
+        <li class="list-space">
+          <a class="snes-font" href="SNES.html">Super Nintendo</a>
+        </li>
+        <li class="list-space">
+          <a class="sega-font" href="SegaGenesis.html">
+            Sega
+          </a>
+        </li>
+        <li class="list-space">
+          <a class="arcade-font" href="#">Arcade</a>
+        </li>
+        <li class="list-space">
+          <a class="n64-font" href="#">Nintendo 64</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+  </div>
+  <!-------------------------------------------------------------------------------------------------->
+
+
+  <!-- MAIN BODY -->
+
+
+
+  <!-- RIGHT SIDE -->
+  <div class="right-side">
+
+    <h3 id="year-title">2021</h3>
+
+    <div class="search-container">
+      <form id="form" role="search">
+        <input type="search" id="query" name="q" placeholder="Search...">
+
+      </form>
+    </div>
+
+
+
+
+
+
+    <!--        MONTHS-->
+    <br>
+    <p class="months">January</p>
+
+
+
+
+
+
+    <!--        ZELDA (EXAMPLE) -->
+    <section id="section">
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <center> <img class="thumbnail" src="img/Zelda.png" alt="ehh"> </center>
+            <h3 class="game-title-heading3">The Legend of Zelda</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--        Mario 3 (EXAMPLE) -->
+    <section id="section2">
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <center> <img class="thumbnail" src="img/mario3.jpg" alt="ehh"> </center>
+            <h3 class="game-title-heading3">Super Mario Bros. 3</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--        Kirby (EXAMPLE) -->
+    <section id="section3">
+      <div class="row">
+        <div class="third-column">
+          <div class="card">
+            <center> <img class="thumbnail" src="img/kirby.png" alt="ehh"> </center>
+            <h3 class="game-title-heading3">Kirby's Adventure</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--        Turtles (EXAMPLE) -->
+    <section id="section4">
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <center> <img class="thumbnail" src="img/turtles.jpg" alt="ehh"> </center>
+            <h3 class="game-title-heading3">Turtles</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--        Batman (EXAMPLE) -->
+    <section id="section5">
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <center> <img class="thumbnail" src="img/batman.jpg" alt="ehh"> </center>
+            <h3 class="game-title-heading3">Batman</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--        DuckTales (EXAMPLE) -->
+    <section id="section6">
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <center> <img class="thumbnail" src="img/ducktales.png" alt="ehh"> </center>
+            <h3 class="game-title-heading3">DuckTales</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ZELDA LINKS -->
+    <div class="zelda-links">
+      <h2 class="links">Zelda Links</h2>
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda" target="_blank">
+        <img src="img/G01.png" alt="zelda1">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/Zelda_II:_The_Adventure_of_Link" target="_blank">
+        <img src="img/G02.png" alt="zelda2">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_A_Link_to_the_Past" target="_blank">
+        <img src="img/G03.png" alt="lttp">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Link%27s_Awakening" target="_blank">
+        <img src="img/G04.png" alt="awakening">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Ocarina_of_Time" target="_blank">
+        <img src="img/G05.png" alt="oot">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Majora%27s_Mask" target="_blank">
+        <img src="img/G06.png" alt="mm">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Oracle_of_Seasons" target="_blank">
+        <img src="img/G07.png" alt="seasons">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Oracle_of_Ages" target="_blank">
+        <img src="img/G08.png" alt="ages">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_The_Wind_Waker" target="_blank">
+        <img src="img/G09.png" alt="ww">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_The_Minish_Cap" target="_blank">
+        <img src="img/G10.png" alt="minish">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Twilight_Princess" target="_blank">
+        <img src="img/G11.png" alt="tp">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Phantom_Hourglass" target="_blank">
+        <img src="img/G12.png" alt="hourglass">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Spirit_Tracks" target="_blank">
+        <img src="img/G13.png" alt="tracks">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Skyward_Sword" target="_blank">
+        <img src="img/G14.png" alt="ss">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_A_Link_Between_Worlds" target="_blank">
+        <img src="img/G15.png" alt="linkbetweenworlds">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild" target="_blank">
+        <img class="botw" src="img/G16.png" alt="botw">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom" target="_blank">
+        <img class="next-zelda" src="img/G17.png" alt="next">
+      </a>
+
+    </div>
+
+
+
+  </div>  <!-- CLOSE(right-side)CLOSE-->
+
+
+
+</div>  <!-- CLOSE(main-panel)CLOSE-->
+
+
+
+
+
+
+
+
+<!-- BOTTOM BAR -->
+<div class="bottom-bar">
+  <span id="bottom-bar-text">© 2016-2023 •
+    <a href="#">Game Library.com</a> •
+    <a href="mailto:retrocastlenj@gmail.com">Contact</a> •
+    <a href="#">Privacy</a>
+  </span>
+
+
+
+
+</div>
+<!-- Javascript-->
+<script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
+
+<!--
+
+http://playingwithsuperpower.com/reviews/
+http://cheat.retrogames.com/index.htm
+https://www.smwcentral.net/?p=section&s=smwhacks
+https://www.romulation.org/
+https://coolrom.com.au/
+http://snesmusic.org/v2/profile.php?profile=set&selected=1494
+
+-->
+
+
+<!--Make sure to add section of Live Notes (Games to Play Next Month)-->
+<!--Make sure to use Opera GX sliding style for games played-->
+
+
+

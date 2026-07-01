@@ -4,11 +4,11 @@ import banner from '../assets/banner.png'
 
 const tabs = [
   { label: 'Home', path: '/', cls: 'nav-button' },
-  { label: 'Add', path: '/add', cls: 'nav-button2' },
-  { label: 'Year', path: '/year', cls: 'nav-button3' },
-  { label: 'Records', path: '/records', cls: 'nav-button4' },
-  { label: 'WWE', path: '/wwe', cls: 'nav-button5' },
-  { label: 'Notes', path: '/notes', cls: 'nav-button6' },
+  { label: 'Add', path: '/add', cls: 'nav-button' },
+  { label: 'Year', path: '/year', cls: 'nav-button' },
+  { label: 'Records', path: '/records', cls: 'nav-button' },
+  { label: 'WWE', path: '/wwe', cls: 'nav-button' },
+  { label: 'Notes', path: '/notes', cls: 'nav-button' },
 ]
 
 export default function Header() {

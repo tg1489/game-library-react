@@ -1,0 +1,1312 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+
+}
+
+
+
+/*html::selection  {*/
+/*  background: #ab3939ad;*/
+/*  text-shadow: none;*/
+/*}*/
+
+
+/*html::-moz-selection  {*/
+/*  background: #ab3939ad;*/
+/*  text-shadow: none;*/
+/*}*/
+
+body {
+  background-image: url("../img/mariobg.png");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+/*.webworkers {*/
+  /*background-image: url("../img/mariobg.png");*/
+  /*background-position-x: center;*/
+  /*background-position-y: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-attachment: fixed;*/
+
+  /*background-size: cover;*/
+  /*-webkit-background-size: cover;*/
+  /*-moz-background-size: cover;*/
+  /*-o-background-size: cover;*/
+/*}*/
+
+
+
+
+h1 {
+  text-align: center;
+}
+
+
+
+.top-bar {
+  background-color: #222;
+  border-bottom: 1px solid #000;
+  padding: 4px;
+  min-height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1178px;
+  position: relative;
+  font-family: Arial, Sans-serif, serif;
+  font-size: 13px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  box-shadow: 1px 0 15px -4px black, -1px 0 8px -4px black;
+}
+
+#site-description {
+  color: #CCC;
+  font-family: 'Roboto Condensed', Rockwell, serif;
+  font-size: 15px;
+  display: inline-block;
+  margin-right: 4px;
+  line-height: 1;
+  vertical-align: bottom;
+}
+
+#mainbannerid {
+
+}
+
+.fade-in {
+  animation: fadeIn 7s;
+
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+}
+
+
+
+
+
+.banner {
+
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 1178px;
+  position: relative;
+  box-shadow: 1px 0 15px -4px black, -1px 0 8px -4px black;
+}
+
+
+
+
+.below-banner {
+  border-top: 1px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1178px;
+
+}
+
+.navigation-bar {
+
+  position: static;
+  font-family: "Roboto Condensed", Rockwell, serif;
+  font-size: 16px;
+  text-shadow: 1px 1px 2px #222;
+  z-index:9999;
+
+
+
+
+
+}
+
+.nav-main {
+
+  background-color: #ab3939;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1168px;
+  border-bottom: 1px solid #000;
+  height: 34px;
+  line-height: 1.2;
+  box-shadow: 1px 0 15px -4px black, -1px 0 8px -4px black;
+
+  padding-left: 10px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  z-index:9999;
+}
+
+
+.nav-main-iceland {
+  background-color: #6da0ab;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1168px;
+  border-bottom: 1px solid #000;
+  height: 34px;
+  line-height: 1.2;
+  box-shadow: 1px 0 15px -4px black, -1px 0 8px -4px black;
+
+  padding-left: 10px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  z-index:9999;
+}
+
+
+
+/*-- HOME BUTTON --*/
+
+.nav-button  {
+  float: left;
+  width: 80px;
+  border-radius: 0;
+  border: #ab3939;
+  background-color: #ab3939;
+  border-right: 0 solid #873838;
+  border-left: 1px solid #873838;
+  color: #FFF;
+  text-shadow: #000 1px 0 1px;
+  padding: 8px;
+}
+
+.nav-button-iceland {
+  float: left;
+  width: 80px;
+  border-radius: 0;
+  border: #000;
+  background-color: #6da0ab;
+  border-right: 0 solid #000;
+  border-left: 1px solid #000;
+  color: #FFF;
+  text-shadow: #000 1px 0 1px;
+  padding: 8px;
+}
+
+.nav-button:hover {
+  background-color: #000;
+  opacity: 40%;
+  z-index : 9999;
+
+}
+
+/*-- ADD BUTTON --*/
+.nav-button2 {
+
+  float: left;
+  margin-right: 0;
+  margin-left: 0;
+  height: 34px;
+  width: 80px;
+  cursor: pointer;
+  background-color: #ab3939;
+
+  color: #FFF;
+  text-shadow: #000 1px 0 1px;
+
+  border: #ab3939;
+  border-left: 1px solid #873838;
+  border-right: 1px solid #873838;
+  border-bottom: 0 solid #000;
+
+  box-shadow: 1px 0 4px -4px #fd6b6b;
+  text-decoration: none;
+  z-index : 9999;
+
+}
+.nav-button2-iceland {
+  float: left;
+  margin-right: 0;
+  margin-left: 0;
+  height: 34px;
+  width: 80px;
+  cursor: pointer;
+  background-color: #6da0ab;
+  color: #FFF;
+  text-shadow: #000 1px 0 1px;
+  border: #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 0 solid #000;
+  box-shadow: 1px 0 4px -4px #000;
+  text-decoration: none;
+  z-index : 9999;
+}
+
+.nav-button2:hover {
+  background-color: #000;
+  opacity: 40%;
+  z-index : 9999;
+}
+
+/*-- YEAR BUTTON --*/
+
+.nav-button3 {
+  float: left;
+  margin-right: 0;
+  margin-left: 0;
+  height: 34px;
+  width: 80px;
+  cursor: pointer;
+  background-color: #ab3939;
+  color: #FFF;
+  text-shadow: #000 1px 0 1px;
+
+  border: #ab3939;
+  border-right: 1px solid #873838;
+  border-bottom: 0 solid #000;
+
+  box-shadow: 1px 0 4px -4px #fd6b6b;
+  text-decoration: none;
+  z-index : 9999;
+}
+.nav-button3-iceland {
+  float: left;
+  margin-right: 0;
+  margin-left: 0;
+  height: 34px;
+  width: 80px;
+  cursor: pointer;
+  background-color: #6da0ab;
+  color: #FFF;
+  text-shadow: #000 1px 0 1px;
+  border: #000;
+  border-right: 1px solid #000;
+  border-bottom: 0 solid #000;
+  box-shadow: 1px 0 4px -4px #000;
+  text-decoration: none;
+  z-index : 9999;
+}
+
+
+.nav-button3:hover {
+  float: left;
+  background-color: #222;
+  opacity: 80%;
+  z-index : 9999;
+
+}
+
+/* Show the dropdown menu on hover */
+
+.nav-button3:hover .dropdown-menu {
+  display: block;
+  transition-duration: 0.4s;
+  z-index : 9999;
+
+}
+
+.nav-button3:hover .dropdown-menu a:hover {
+  background-color: #000;
+
+  transition-duration: 0.4s;
+  z-index : 9999;
+}
+
+/* Dropdown Content (Hidden by Default) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.dropdown-menu {
+  /*float: left;*/
+  display: none;
+  position: absolute;
+  background-color: #222;
+  color: #ab3939;
+  cursor: pointer;
+  min-width: 150px;
+  z-index : 9999;
+  font-family: "Roboto Condensed", Rockwell, serif;
+}
+
+.dropdown-menu-iceland {
+  /*float: left;*/
+  display: none;
+  position: absolute;
+  background-color: #222;
+  color: #6da0ab;
+  cursor: pointer;
+  min-width: 150px;
+  z-index : 9999;
+  font-family: "Roboto Condensed", Rockwell, serif;
+}
+
+/* Links inside the dropdown */
+.dropdown-menu a {
+
+  color: #ab3939;
+  padding: 11px 15px;
+  text-decoration: none;
+  display: block;
+  z-index: 9999;
+}
+
+.dropdown-menu-iceland a {
+  color: #6da0ab;
+  padding: 11px 15px;
+  text-decoration: none;
+  display: block;
+  z-index: 9999;
+}
+
+
+
+#2016{color: #6da0ab;
+  padding: 11px 15px;
+  text-decoration: none;
+  display: block;
+  z-index: 9999;}
+#2017{color: #6da0ab;
+  padding: 11px 15px;
+  text-decoration: none;
+  display: block;
+  z-index: 9999;}
+#2018{color: #6da0ab;
+  padding: 11px 15px;
+  text-decoration: none;
+  display: block;
+  z-index: 9999;}
+#2019{color: #6da0ab;
+  padding: 11px 15px;
+  text-decoration: none;
+  display: block;
+  z-index: 9999;}
+#2020{color: #6da0ab;
+  padding: 11px 15px;
+  text-decoration: none;
+  display: block;
+  z-index: 9999;}
+#2021{color: #6da0ab;
+  padding: 11px 15px;
+  text-decoration: none;
+  display: block;
+  z-index: 9999;}
+#2022{color: #6da0ab;
+  padding: 11px 15px;
+  text-decoration: none;
+  display: block;
+  z-index: 9999;}
+#2023{color: #6da0ab;
+  padding: 11px 15px;
+  text-decoration: none;
+  display: block;
+  z-index: 9999;}
+
+/*-- RECORDS BUTTON --*/
+.nav-button4 {
+  float: left;
+  margin-right: 0;
+  margin-left: 0;
+  height: 34px;
+  width: 80px;
+  cursor: pointer;
+  background-color: #ab3939;
+  color: #FFF;
+  text-shadow: #000 1px 0 1px;
+
+  border: #ab3939;
+  border-right: 1px solid #873838;
+  border-bottom: 0 solid #000;
+
+  box-shadow: 1px 0 4px -4px #fd6b6b;
+  text-decoration: none;
+  z-index : -9999;
+}
+
+.nav-button4-iceland {
+  float: left;
+  margin-right: 0;
+  margin-left: 0;
+  height: 34px;
+  width: 80px;
+  cursor: pointer;
+  background-color: #6da0ab;
+  color: #FFF;
+  text-shadow: #000 1px 0 1px;
+
+  border: #000;
+  border-right: 1px solid #000;
+  border-bottom: 0 solid #000;
+
+  box-shadow: 1px 0 4px -4px #000;
+  text-decoration: none;
+  z-index : -9999;
+}
+
+.nav-button4:hover {
+  background-color: #000;
+  opacity: 40%;
+  z-index : 9999;
+
+}
+
+/*-- WWE BUTTON --*/
+.nav-button5 {
+  float: left;
+  margin-right: 0;
+  margin-left: 0;
+  height: 34px;
+  width: 80px;
+  cursor: pointer;
+  background-color: #ab3939;
+  color: #FFF;
+  text-shadow: #000 1px 0 1px;
+
+  border: #ab3939;
+  border-right: 1px solid #873838;
+  border-bottom: 0 solid #000;
+
+  box-shadow: 1px 0 4px -4px #fd6b6b;
+  text-decoration: none;
+  z-index : 9999;
+}
+.nav-button5-iceland {
+  float: left;
+  margin-right: 0;
+  margin-left: 0;
+  height: 34px;
+  width: 80px;
+  cursor: pointer;
+  background-color: #6da0ab;
+  color: #FFF;
+  text-shadow: #000 1px 0 1px;
+
+  border: #000;
+  border-right: 1px solid #000;
+  border-bottom: 0 solid #000;
+
+  box-shadow: 1px 0 4px -4px #000;
+  text-decoration: none;
+  z-index : 9999;
+}
+
+
+.nav-button5:hover {
+  background-color: #000;
+  opacity: 40%;
+  z-index : 9999;
+
+}
+/*-- GAME LIST BUTTON --*/
+.nav-button6 {
+  float: left;
+  margin-right: 0;
+  margin-left: 0;
+  height: 34px;
+  width: 100px;
+  cursor: pointer;
+  background-color: #ab3939;
+  color: #FFF;
+  text-shadow: #000 1px 0 1px;
+
+  border: #ab3939;
+  border-right: 1px solid #873838;
+  border-bottom: 0 solid #000;
+
+  box-shadow: 1px 0 4px -4px #fd6b6b;
+  text-decoration: none;
+  z-index : 9999;
+}
+
+.nav-button6-iceland {
+  float: left;
+  margin-right: 0;
+  margin-left: 0;
+  height: 34px;
+  width: 100px;
+  cursor: pointer;
+  background-color: #6da0ab;
+  color: #FFF;
+  text-shadow: #000 1px 0 1px;
+
+  border: #000;
+  border-right: 1px solid #000;
+  border-bottom: 0 solid #000;
+
+  box-shadow: 1px 0 4px -4px #000;
+  text-decoration: none;
+  z-index : 9999;
+}
+
+.nav-button6:hover {
+  background-color: #000;
+  opacity: 40%;
+  z-index : 9999;
+
+}
+
+
+
+.header {
+  min-height: 0px;
+  background-color: #FFF;
+  background-position: center;
+  border-bottom: 1px solid #000;
+  width: 100%;
+
+}
+/*-- SHADOW PANEL --*/
+.shadow-panel {
+  z-index: -9999;
+  position: relative;
+  box-shadow: 1px 0 5px -4px black, -1px 0 5px -4px black;
+
+
+}
+
+
+
+/*-- MAIN BODY --*/
+.main-panel {
+  position: relative;
+  background-color: white;
+  /*margin-top: 30px;
+  margin-right: 20%;
+  margin-left: 20%;*/
+margin-top: -1px;
+  margin-left:auto;
+  margin-right:auto;
+  width:1178px;
+
+  padding-top: 10px;
+  padding-right: 10px;
+
+  box-sizing: border-box;
+  box-shadow: 1px 0 15px -4px black, -1px 0 8px -4px black;
+
+
+
+}
+
+
+#postman-button {
+  position: relative;
+  float: right;
+  height: 250px;
+  width: 250px;
+  padding-right: 190px;
+  padding-top: 100px;
+  background-image: url("img/Letter to Zelda1.png");
+}
+
+#formid {
+  padding-left: 10px;
+}
+
+#letter-to-zelda {
+  position: relative;
+  float: right;
+  height: 250px;
+  width: 250px;
+  padding-right: 190px;
+  padding-top: 100px;
+}
+#postman {
+  position: relative;
+  float: right;
+  height: 250px;
+  width: 250px;
+  padding-right: 190px;
+  padding-top: 100px;
+}
+
+.add-game {
+  margin-top: -30px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  font-family: "Adobe Fangsong Std R", Sans-serif, "Roboto Condensed", serif;
+  font-size: 20px;
+  color: #666;
+
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+#game-title {
+
+  padding-right: 10px;
+}
+
+
+
+.send-button {
+  position: absolute;
+  cursor: pointer;
+  background: #ab3939;
+  color: white;
+  border-style: outset;
+  border-color: #873838;
+  height: 50px;
+  width: 100px;
+  font: bold 15px arial,sans-serif;
+  text-shadow: none;
+}
+
+
+
+.left-side {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+.right-side {
+  /*Keep as static*/
+  position: static;
+
+  border: solid 1px #000;
+  width: 958px;
+  box-shadow: 1px 0 5px -4px black, -1px 0 5px -4px black;
+  margin-left: 208px;
+  padding-bottom: 80px;
+  padding-top: 20px;
+  z-index: 9999;
+}
+
+
+
+.random-zone {
+
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.genie-img {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 80px;
+  background-size: cover;
+}
+
+.game-shark-img {
+  position: absolute;
+  margin-top: -210px;
+  margin-left: 280px;
+  /*background-size: cover;*/
+
+}
+
+.rom-download-img {
+  position: absolute;
+  margin-top: -220px;
+  margin-left: 720px;
+  background-size: cover;
+}
+
+.charizard-img {
+  position: absolute;
+  margin-top: -150px;
+  margin-left: 500px;
+  background-size: cover;
+}
+
+/*-- ZELDA LINKS --*/
+.links {
+  background-color: #ab3939;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+
+
+  margin: -8px 10px 8px;
+  padding: 4px 8px;
+  color: #EEE;
+  font-family: 'Roboto Condensed', Rockwell, serif;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px #222;
+}
+
+.zelda-links-class {
+  background-image: url("../img/ice.png");
+  margin: -8px 10px 8px;
+  padding: 4px 8px;
+  color: #EEE;
+  font-family: 'Roboto Condensed', Rockwell, serif;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px #222;
+}
+
+.botw {
+  padding-top: 10px;
+}
+
+.next-zelda {
+  padding-top: 10px;
+}
+
+/*-- SEARCH --*/
+.search {
+  position: relative;
+  border: solid 1px #000;
+  width: 190px;
+  box-shadow: 1px 0 5px -4px black, -1px 0 5px -4px black;
+  margin-left: 8px;
+  padding-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  float: left;
+}
+
+.search-bar {
+  /* Same as SEARCH above */
+}
+
+.search-field {
+  /* This is where you type */
+  position: absolute;
+  width: 100px;
+  margin-left: -115px;
+  margin-top: -5px;
+}
+
+
+.search-form {
+  /* This controls both field and button */
+  position: absolute;
+  background: #ab3939;
+  color: #ffffff;
+  padding: 3px 5px;
+  border: none;
+  border-radius: 0.25em;
+  margin-left: 133px;
+  margin-top: 11px;
+}
+
+.search-submit {
+  /* Search Button */
+  position: absolute;
+  background: #ab3939;
+  color: #ffffff;
+  padding: 3px 5px;
+  border: none;
+  border-radius: 0.25em;
+  margin-left: -8px;
+  margin-top: -5px;
+  cursor: pointer;
+
+}
+
+.search-submit-iceland {
+  position: absolute;
+  background-image: url("../img/ice.png");
+  color: #ffffff;
+  padding: 3px 5px;
+  border: none;
+  border-radius: 0.25em;
+  margin-left: -8px;
+  margin-top: -5px;
+  cursor: pointer;
+
+}
+
+/*-- GAME IDEAS --*/
+.game-ideas-container {
+  position: absolute;
+  border: solid 1px #000;
+  width: 190px;
+  box-shadow: 1px 0 5px -4px black, -1px 0 5px -4px black;
+  margin-left: 8px;
+  margin-right: 50px;
+  margin-top: 80px;
+  text-align: center;
+  float: left;
+}
+
+.game-ideas-list {
+  text-align: left;
+}
+.nes-font {
+  color: #222;
+  font-family: Rockwell, serif;
+  font-size: 20px;
+  /*font-weight: bold;*/
+  /*text-shadow: 1px 1px 2px #222;*/
+}
+.snes-font {
+  color: #222;
+  font-family: Rockwell, serif;
+  font-size: 20px;
+  /*font-weight: bold;*/
+  /*text-shadow: 1px 1px 2px #222;*/
+}
+.sega-font {
+  color: #222;
+  font-family: Rockwell, serif;
+  font-size: 20px;
+  /*font-weight: bold;*/
+  /*text-shadow: 1px 1px 2px #222;*/
+}
+.arcade-font {
+  color: #222;
+  font-family: Rockwell, serif;
+  font-size: 20px;
+  /*font-weight: bold;*/
+  /*text-shadow: 1px 1px 2px #222;*/
+}
+.n64-font {
+  color: #222;
+  font-family: Rockwell, serif;
+  font-size: 20px;
+  /*font-weight: bold;*/
+  /*text-shadow: 1px 1px 2px #222;*/
+}
+
+
+
+.game-ideas-bar {
+
+  background-color: #ab3939;
+  padding: 0 1px;
+
+}
+
+.game-ideas-iceland {
+  background-image: url("../img/ice.png");
+  padding: 0 1px;
+}
+
+.game-ideas-font {
+  position: relative;
+  margin-top: 0;
+  padding: 4px 8px;
+
+  color: #EEE;
+  font-family: 'Roboto Condensed', Rockwell, serif;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px #222;
+
+
+
+
+}
+
+
+.green-checkmark {
+  min-height: 450px;
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+.green-checkmark-text {
+  font-family: "Adobe Fangsong Std R", Sans-serif, "Roboto Condensed", serif;
+  font-size: 30px;
+  color: #666;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+#machamp {
+
+  height: 300px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+
+.bottom-bar {
+  /*Keep Relative*/
+  position: relative;
+  background-color: #222;
+  color: #FFF;
+  margin-left:auto;
+  margin-right:auto;
+  width:1178px;
+  min-height: 34px;
+  border-top: 1px solid #000;
+  text-shadow: 0 0 2px #000;
+  font-family: Arial, Sans-serif, serif;
+  font-size: 13px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  box-shadow: 1px 0 15px -4px black, -1px 0 8px -4px black;
+  margin-top: -1px;
+  padding-top: 8px;
+  padding-left: 8px;
+
+}
+
+/*.bottom-bar-images {*/
+/*  float: right;*/
+/*  position: relative;*/
+/*  padding-right: 800px;*/
+/*  padding-top: -95px;*/
+/*  border-bottom: 500px;*/
+/*}*/
+
+#bottom-bar-text a {
+  position: static;
+  color: #DC8300;
+  text-decoration: none;
+
+
+
+}
+
+button {
+  position: static;
+  /*background-image: url(img/oot.png);*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: 50% 50%;*/
+  /*!* put the height and width of your image here *!*/
+  /*height: 15px;*/
+  /*width: 15px;*/
+  /*border: none;*/
+
+}
+
+button span {
+  display: none;
+}
+
+button:hover {
+  position: relative;
+  z-index: 9999;
+  float: left;
+
+}
+
+
+::-moz-selection {
+  background: #ab3939ad;
+  text-shadow: none;
+}
+
+::selection {
+  background: #ab3939ad;
+  text-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+  /*Remove text-shadow in selection highlight:*/
+  /*https://twitter.com/miketaylr/status/12228805301*/
+
+  /*Vendor-prefixed and regular ::selection selectors cannot be combined:*/
+  /*https://stackoverflow.com/a/16982510/7133471*/
+
+  /*Customize the background color to match your design.*/
+
+
+
+
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+/* GAME SEARCH */
+
+.space-bar {
+  padding-left: 16px;
+}
+
+
+.months {
+  margin-left: 50%;
+  margin-right: 50%;
+  align-items: center;
+  /* margin-top: 50px; */
+  position: absolute;
+  float: left;
+  text-align: center;
+  font-family: "Roboto Condensed", Rockwell, serif;
+  font-size: 20px;
+  text-transform: uppercase;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

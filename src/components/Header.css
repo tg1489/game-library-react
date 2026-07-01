@@ -14,6 +14,7 @@
   padding: 0.5rem 1rem;
   font-size: 15px;
   line-height: 1;
+  box-shadow: 1px 0 15px -4px black, -1px 0 8px -4px black;
 }
 
 .header-logo {
@@ -21,10 +22,6 @@
   justify-content: center;
   background-color: white;
   padding: 1rem;
-  box-shadow: 1px 0 15px -4px black, -1px 0 8px -4px black;
-}
-
-.header-greeting {
   box-shadow: 1px 0 15px -4px black, -1px 0 8px -4px black;
 }
 
@@ -54,16 +51,18 @@
   font-family: "Roboto Condensed", Rockwell, serif;
   font-size: 16px;
   text-shadow: 1px 1px 2px #222;
+  overflow: hidden;
 }
 
 .nav-button {
   float: left;
   width: 80px;
+  text-align: center;
   border-radius: 0;
   border: #ab3939;
-  background-color: #ab3939;
-  border-right: 0 solid #873838;
   border-left: 1px solid #873838;
+  border-right: 0 solid #873838;
+  background-color: #ab3939;
   color: #FFF;
   text-shadow: #000 1px 0 1px;
   padding: 8px;
@@ -71,6 +70,7 @@
   font-family: "Roboto Condensed", Rockwell, serif;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .nav-button:hover {

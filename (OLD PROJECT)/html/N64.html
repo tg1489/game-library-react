@@ -1,0 +1,1444 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<!-- HEADING + CSS-->
+<head>
+  <meta charset="utf-8">
+  <title>Nintendo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!--  <link rel="stylesheet" href="css/vgstyle.css">-->
+  <link rel="stylesheet" href="css/nes.css">
+  <link rel="icon" href="img/triforce.png">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!-- TOP BAR HELLO JAMES-->
+<div class="top-bar" role="banner">
+  <div id="top-bar-info">
+    <span id="site-description">Hello James, for England...</span>
+  </div>
+
+</div>
+
+<!-- SITE BANNER MAIN LOGO -->
+<div class="banner"><a href="index.html">
+  <img src="img/banner.png" alt="Site Banner">
+</a></div>
+
+<!-- BELOW BANNER -->
+<div class="below-banner"></div>
+
+
+
+<!-- NAV BAR TOP + BUTTONS ----------------------------------------------->
+<div class="navigation-bar">
+  <nav class="nav-main" role="navigation" >
+
+    <!-- HOME BUTTON -->
+    <button class="nav-button" onclick="homeClick()">
+      Home
+    </button>
+    <!------------------------------------------>
+
+    <!-- ADD BUTTON -->
+    <button id="add-game" onclick="addClick()" class="nav-button2">
+      Add
+    </button>
+    <!---------------------------------------------------->
+
+    <!-- YEAR BUTTON + DROPDOWN MENU -->
+
+    <button id="year" onclick="myFunction()" class="nav-button3">
+      Year
+      <div class="dropdown-menu">
+        <a href="2016.html">2016</a>
+        <a href="2017.html">2017</a>
+        <a href="2018.html">2018</a>
+        <a href="2019.html">2019</a>
+        <a href="2020.html">2020</a>
+        <a href="2021.html">2021</a>
+        <a href="2022.html">2022</a>
+        <a href="2023.html">2023</a>
+      </div>
+    </button>
+
+    <!--------------------------------------------------->
+
+    <!-- RECORD BUTTON -->
+    <button id="records" onclick="recordsClick()" class="nav-button4">
+      Records
+    </button>
+    <!---------------------------------------------------->
+
+
+
+    <!-- WWE BUTTON -->
+    <button id="wwe" class="nav-button5" onclick="underConstruction()">
+      WWE
+    </button>
+    <!------------------------------- onclick="underConstruction()"--------------------->
+
+    <!-- Notes -->
+    <button id="notes" class="nav-button6" onclick="notesClick()">
+      Notes
+    </button>
+    <!---------------------------------------------------->
+
+  </nav>
+</div>
+
+
+
+
+
+<!-- SHADOW PANEL -->
+<div class="shadow-panel">
+
+</div>
+
+
+
+
+<div class="main-panel">
+  <!-- LEFT SIDE -->
+  <div class="left-side">
+    <!-- SEARCH BAR -->
+    <div class="search-bar">
+
+      <h3 class="search"></h3>
+
+      <form role="search" method="get" class="search-form" action="https://index.html/">
+        <label>
+          <span class="screen-reader-text"></span>
+          <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+        </label>
+        <input type="submit" class="search-submit" value="Search">
+      </form>
+    </div>
+
+    <!-- GAME IDEAS -->
+
+    <div class="game-ideas-container">
+      <div class="game-ideas-bar">
+        <h3 class="game-ideas-font">Game Ideas</h3>
+
+      </div>
+    <div class="game-ideas-list">
+      <ul>
+        <li>
+          <a class="nes-font" href="NES.html">Nintendo</a>
+        </li>
+        <li>
+          <a class="snes-font" href="SNES.html">Super Nintendo</a>
+        </li>
+        <li>
+          <a class="sega-font" href="SegaGenesis.html">
+            Sega
+          </a>
+        </li>
+        <li>
+          <a class="arcade-font" href="#">Arcade</a>
+        </li>
+        <li>
+          <a class="n64-font" href="n64.html">Nintendo 64</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+  <!-------------------------------------------------------------------------------------------------->
+
+
+  <!-- MAIN BODY -->
+
+  <!-- RIGHT SIDE -->
+  <div class="right-side">
+
+
+
+    <div class="random-zone">
+      <h1>
+
+
+      </h1>
+
+      <!-- NINTENDO TABLE -->
+
+      <!--LEGEND-->
+      <div id="table-start-id" class="table-start" style="overflow: scroll; height: 400px;">
+        <a id="top-link" href="#"></a>
+        <p class="text-header" align="center"><a href="#platformer">Platformer</a> | <a href="#action">Action</a> | <a href="#adventure">Adventure</a> | <a href="#beatemup">Beat 'em Up</a> | <a href="#puzzle">Puzzle</a> | <a href="#racing">Racing</a> <br>
+          <a href="#rpg">Role Playing</a> | <a href="#runandgun">Run &amp; Gun</a> | <a href="#strategy">Strategy</a> | <a href="#shootemup">Shoot 'em Up</a> | <a href="#sports">Sports</a> </p>
+        <a name="platformer" id="platformer"></a><br>
+
+        <!--TABLE-->
+        <table height="310" border="0"> // MAIN OUTER TABLE - BEGIN
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>007: GoldenEye</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/007.jpg" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>007: The World Is Not Enough</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/007world.jpg" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>1080° Snowboarding</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/1080.jpg" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>A Bug's Life</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/bug.jpg" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>Aero Fighters Assault</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/Aero Fighters Assault.jpg" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>Aero Gauge</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/AeroGauge.jpg" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>Aidyn Chronicles: The First Mage</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/Aidyn Chronicles The First Mage.png" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>All Star Tennis 99</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/All Star Tennis 99.jpg" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>All-Star Baseball 2000</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/All-Star Baseball 2000.jpg" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>All-Star Baseball 2001</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/All-Star Baseball 2001.jpg" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>All-Star Baseball '99</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/99.png" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>Armorines: Project S.W.A.R.M.</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/Armorines Project SWARM.jpg" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>Army Men: Air Combat</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/Army Men Air Combat.jpg" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>Army Men: Sarge's Heroes</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/Army%20Men%20Sarge's%20Heroes.png" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>Army Men: Sarge's Heroes 2</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/Army%20Men%20Sarge's%20Heroes%202.png" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>Asteroids Hyper 64</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/Asteroids Hyper 64.jpg" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+
+          <tbody><tr>
+            <td><table class="maintable" width="256" border="0" align="left">
+              <tbody><tr>
+                <td bgcolor="#56B0DC"><div align="center"><strong>Automobili Lamborghini</strong></div></td>
+              </tr>
+              <tr>
+                <td><img src="n64/Automobili Lamborghini.png" width="256" height="240" border="0"></td>
+              </tr>
+              </tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+          <!--New Table-->
+
+              <table id="tablepress-CompleteN64" class="tablepress tablepress-id-CompleteN64">
+                <thead>
+                <tr class="row-1 odd">
+                  <th class="column-1">Title</th><th class="column-2">Publisher</th><th class="column-3">Release Year</th>
+                </tr>
+                </thead>
+                <tbody class="row-hover">
+                <tr class="row-2 even">
+                  <td class="column-1">007: GoldenEye</td><td class="column-2">Nintendo</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-3 odd">
+                  <td class="column-1">007: The World Is Not Enough</td><td class="column-2">Electronic Arts</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-4 even">
+                  <td class="column-1">1080° Snowboarding</td><td class="column-2">Nintendo</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-5 odd">
+                  <td class="column-1">A Bug's Life</td><td class="column-2">Activision</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-6 even">
+                  <td class="column-1">Aero Fighters Assault</td><td class="column-2">Video System</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-7 odd">
+                  <td class="column-1">AeroGauge</td><td class="column-2">ASCII Entertainment</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-8 even">
+                  <td class="column-1">Aidyn Chronicles: The First Mage</td><td class="column-2">THQ</td><td class="column-3">2001</td>
+                </tr>
+                <tr class="row-9 odd">
+                  <td class="column-1">All Star Tennis 99</td><td class="column-2">Ubisoft</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-10 even">
+                  <td class="column-1">All-Star Baseball 2000</td><td class="column-2">Acclaim</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-11 odd">
+                  <td class="column-1">All-Star Baseball 2001</td><td class="column-2">Acclaim</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-12 even">
+                  <td class="column-1">All-Star Baseball '99</td><td class="column-2">Acclaim</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-13 odd">
+                  <td class="column-1">Armorines: Project S.W.A.R.M.</td><td class="column-2">Acclaim</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-14 even">
+                  <td class="column-1">Army Men: Air Combat</td><td class="column-2">3DO</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-15 odd">
+                  <td class="column-1">Army Men: Sarge's Heroes</td><td class="column-2">3DO</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-16 even">
+                  <td class="column-1">Army Men: Sarge's Heroes 2</td><td class="column-2">3DO</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-17 odd">
+                  <td class="column-1">Asteroids Hyper 64</td><td class="column-2">Crave Entertainment</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-18 even">
+                  <td class="column-1">Automobili Lamborghini</td><td class="column-2">Titus Software</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-19 odd">
+                  <td class="column-1">Banjo-Kazooie</td><td class="column-2">Nintendo</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-20 even">
+                  <td class="column-1">Banjo-Tooie</td><td class="column-2">Nintendo</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-21 odd">
+                  <td class="column-1">Bassmasters 2000</td><td class="column-2">THQ</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-22 even">
+                  <td class="column-1">Batman Beyond: Return of the Joker</td><td class="column-2">Ubisoft</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-23 odd">
+                  <td class="column-1">BattleTanx</td><td class="column-2">3DO</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-24 even">
+                  <td class="column-1">BattleTanx: Global Assault</td><td class="column-2">3DO</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-25 odd">
+                  <td class="column-1">Battlezone: Rise of the Black Dogs</td><td class="column-2">Crave Entertainment</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-26 even">
+                  <td class="column-1">Beetle Adventure Racing!</td><td class="column-2">Electronic Arts</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-27 odd">
+                  <td class="column-1">Big Mountain 2000</td><td class="column-2">SouthPeak Games</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-28 even">
+                  <td class="column-1">Bio F.R.E.A.K.S.</td><td class="column-2">Midway Games</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-29 odd">
+                  <td class="column-1">Blast Corps</td><td class="column-2">Nintendo</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-30 even">
+                  <td class="column-1">Blues Brothers 2000</td><td class="column-2">Titus Software</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-31 odd">
+                  <td class="column-1">Body Harvest</td><td class="column-2">Midway Games</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-32 even">
+                  <td class="column-1">Bomberman 64</td><td class="column-2">Hudson Soft</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-33 odd">
+                  <td class="column-1">Bomberman 64: The Second Attack!</td><td class="column-2">Vatical Entertainment</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-34 even">
+                  <td class="column-1">Bomberman Hero</td><td class="column-2">Nintendo</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-35 odd">
+                  <td class="column-1">Bottom of the 9th</td><td class="column-2">Konami</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-36 even">
+                  <td class="column-1">Brunswick Circuit Pro Bowling</td><td class="column-2">THQ</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-37 odd">
+                  <td class="column-1">Buck Bumble</td><td class="column-2">Ubisoft</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-38 even">
+                  <td class="column-1">Bust-A-Move 2: Arcade Edition</td><td class="column-2">Acclaim</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-39 odd">
+                  <td class="column-1">Bust-A-Move '99</td><td class="column-2">Acclaim</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-40 even">
+                  <td class="column-1">California Speed</td><td class="column-2">Midway Games</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-41 odd">
+                  <td class="column-1">Carmageddon 64</td><td class="column-2">Titus Software</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-42 even">
+                  <td class="column-1">Castlevania</td><td class="column-2">Konami</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-43 odd">
+                  <td class="column-1">Castlevania: Legacy of Darkness</td><td class="column-2">Konami</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-44 even">
+                  <td class="column-1">Chameleon Twist</td><td class="column-2">Sunsoft</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-45 odd">
+                  <td class="column-1">Chameleon Twist 2</td><td class="column-2">Sunsoft</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-46 even">
+                  <td class="column-1">Charlie Blast's Territory</td><td class="column-2">Kemco</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-47 odd">
+                  <td class="column-1">Chopper Attack</td><td class="column-2">Midway Games</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-48 even">
+                  <td class="column-1">ClayFighter 63?</td><td class="column-2">Interplay Entertainment</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-49 odd">
+                  <td class="column-1">ClayFighter: Sculptor's Cut</td><td class="column-2">Interplay</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-50 even">
+                  <td class="column-1">Command &amp; Conquer</td><td class="column-2">Nintendo</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-51 odd">
+                  <td class="column-1">Conker's Bad Fur Day</td><td class="column-2">Rare</td><td class="column-3">2001</td>
+                </tr>
+                <tr class="row-52 even">
+                  <td class="column-1">Cruis'n Exotica</td><td class="column-2">Midway Games</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-53 odd">
+                  <td class="column-1">Cruis'n USA</td><td class="column-2">Nintendo</td><td class="column-3">1996</td>
+                </tr>
+                <tr class="row-54 even">
+                  <td class="column-1">Cruis'n World</td><td class="column-2">Nintendo</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-55 odd">
+                  <td class="column-1">CyberTiger</td><td class="column-2">Electronic Arts</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-56 even">
+                  <td class="column-1">Dark Rift</td><td class="column-2">Vic Tokai</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-57 odd">
+                  <td class="column-1">Deadly Arts</td><td class="column-2">Konami</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-58 even">
+                  <td class="column-1">Destruction Derby 64</td><td class="column-2">THQ</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-59 odd">
+                  <td class="column-1">Diddy Kong Racing</td><td class="column-2">Nintendo</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-60 even">
+                  <td class="column-1">Donald Duck Goin' "Qu@ckers"</td><td class="column-2">Ubisoft</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-61 odd">
+                  <td class="column-1">Donkey Kong 64</td><td class="column-2">Nintendo</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-62 even">
+                  <td class="column-1">Doom 64</td><td class="column-2">Midway Games</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-63 odd">
+                  <td class="column-1">Dr. Mario 64</td><td class="column-2">Nintendo</td><td class="column-3">2001</td>
+                </tr>
+                <tr class="row-64 even">
+                  <td class="column-1">Dual Heroes</td><td class="column-2">Electro Brain</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-65 odd">
+                  <td class="column-1">Duck Dodgers Starring Daffy Duck</td><td class="column-2">Infogrames</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-66 even">
+                  <td class="column-1">Duke Nukem 64</td><td class="column-2">GT Interactive Software</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-67 odd">
+                  <td class="column-1">Duke Nukem: Zero Hour</td><td class="column-2">GT Interactive</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-68 even">
+                  <td class="column-1">Earthworm Jim 3D</td><td class="column-2">Rockstar Games</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-69 odd">
+                  <td class="column-1">ECW Hardcore Revolution</td><td class="column-2">Acclaim</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-70 even">
+                  <td class="column-1">Excitebike 64</td><td class="column-2">Nintendo</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-71 odd">
+                  <td class="column-1">Extreme-G</td><td class="column-2">Acclaim</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-72 even">
+                  <td class="column-1">Extreme-G 2</td><td class="column-2">Acclaim</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-73 odd">
+                  <td class="column-1">F1 Pole Position 64</td><td class="column-2">Ubisoft</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-74 even">
+                  <td class="column-1">F-1 World Grand Prix</td><td class="column-2">Video System</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-75 odd">
+                  <td class="column-1">F-Zero X</td><td class="column-2">Nintendo</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-76 even">
+                  <td class="column-1">FIFA '99</td><td class="column-2">EA Sports</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-77 odd">
+                  <td class="column-1">FIFA Soccer 64</td><td class="column-2">EA Sports</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-78 even">
+                  <td class="column-1">FIFA: Road to World Cup 98</td><td class="column-2">EA Sports</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-79 odd">
+                  <td class="column-1">Fighter Destiny 2</td><td class="column-2">SouthPeak Games</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-80 even">
+                  <td class="column-1">Fighters Destiny</td><td class="column-2">Ocean Software</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-81 odd">
+                  <td class="column-1">Fighting Force 64</td><td class="column-2">Crave Entertainment</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-82 even">
+                  <td class="column-1">Flying Dragon</td><td class="column-2">Natsume</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-83 odd">
+                  <td class="column-1">Forsaken 64</td><td class="column-2">Acclaim</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-84 even">
+                  <td class="column-1">Fox Sports College Hoops '99</td><td class="column-2">Fox Interactive</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-85 odd">
+                  <td class="column-1">Gauntlet Legends</td><td class="column-2">Midway Games</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-86 even">
+                  <td class="column-1">Gex 3: Deep Cover Gecko</td><td class="column-2">Crave Entertainment</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-87 odd">
+                  <td class="column-1">Gex 64: Enter the Gecko</td><td class="column-2">Midway Games</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-88 even">
+                  <td class="column-1">Glover</td><td class="column-2">Hasbro Interactive</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-89 odd">
+                  <td class="column-1">Goemon's Great Adventure</td><td class="column-2">Konami</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-90 even">
+                  <td class="column-1">Golden Nugget 64</td><td class="column-2">Electronic Arts</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-91 odd">
+                  <td class="column-1">GT 64: Championship Edition</td><td class="column-2">Ocean Software</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-92 even">
+                  <td class="column-1">Harvest Moon 64</td><td class="column-2">Natsume</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-93 odd">
+                  <td class="column-1">Hercules: The Legendary Journeys</td><td class="column-2">Titus</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-94 even">
+                  <td class="column-1">Hexen</td><td class="column-2">GT Interactive Software</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-95 odd">
+                  <td class="column-1">Hey You, Pikachu!</td><td class="column-2">Nintendo</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-96 even">
+                  <td class="column-1">Hot Wheels Turbo Racing</td><td class="column-2">Electronic Arts</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-97 odd">
+                  <td class="column-1">Hybrid Heaven</td><td class="column-2">Konami</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-98 even">
+                  <td class="column-1">Hydro Thunder</td><td class="column-2">Midway Games</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-99 odd">
+                  <td class="column-1">Iggy's Reckin' Balls</td><td class="column-2">Acclaim</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-100 even">
+                  <td class="column-1">In-Fisherman Bass Hunter 64</td><td class="column-2">Take-Two</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-101 odd">
+                  <td class="column-1">Indiana Jones and the Infernal Machine</td><td class="column-2">LucasArts</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-102 even">
+                  <td class="column-1">Indy Racing 2000</td><td class="column-2">Infogrames</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-103 odd">
+                  <td class="column-1">International Superstar Soccer 64</td><td class="column-2">Konami</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-104 even">
+                  <td class="column-1">International Superstar Soccer 2000</td><td class="column-2">Konami</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-105 odd">
+                  <td class="column-1">International Superstar Soccer '98</td><td class="column-2">Konami</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-106 even">
+                  <td class="column-1">International Track &amp; Field 2000</td><td class="column-2">Konami</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-107 odd">
+                  <td class="column-1">Jeopardy!</td><td class="column-2">GameTek</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-108 even">
+                  <td class="column-1">Jeremy McGrath Supercross 2000</td><td class="column-2">Acclaim</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-109 odd">
+                  <td class="column-1">Jet Force Gemini</td><td class="column-2">Rare</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-110 even">
+                  <td class="column-1">John Romero's Daikatana</td><td class="column-2">Kemco</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-111 odd">
+                  <td class="column-1">Ken Griffey Jr.'s Slugfest</td><td class="column-2">Nintendo</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-112 even">
+                  <td class="column-1">Killer Instinct Gold</td><td class="column-2">Nintendo</td><td class="column-3">1996</td>
+                </tr>
+                <tr class="row-113 odd">
+                  <td class="column-1">Kirby 64: The Crystal Shards</td><td class="column-2">Nintendo</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-114 even">
+                  <td class="column-1">Knife Edge: Nose Gunner</td><td class="column-2">Kemco</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-115 odd">
+                  <td class="column-1">Knockout Kings 2000</td><td class="column-2">EA Sports</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-116 even">
+                  <td class="column-1">Kobe Bryant in NBA Courtside</td><td class="column-2">Nintendo</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-117 odd">
+                  <td class="column-1">Legend of Zelda: Majora's Mask, The</td><td class="column-2">Nintendo</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-118 even">
+                  <td class="column-1">Legend of Zelda: Ocarina of Time, The</td><td class="column-2">Nintendo</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-119 odd">
+                  <td class="column-1">Lego Racers</td><td class="column-2">Lego Media</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-120 even">
+                  <td class="column-1">Lode Runner 3-D</td><td class="column-2">Infogrames</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-121 odd">
+                  <td class="column-1">Mace: The Dark Age</td><td class="column-2">Midway Games</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-122 even">
+                  <td class="column-1">Madden Football 64</td><td class="column-2">EA Sports</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-123 odd">
+                  <td class="column-1">Madden NFL 2000</td><td class="column-2">EA Sports</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-124 even">
+                  <td class="column-1">Madden NFL 2001</td><td class="column-2">EA Sports</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-125 odd">
+                  <td class="column-1">Madden NFL 2002</td><td class="column-2">EA Sports</td><td class="column-3">2001</td>
+                </tr>
+                <tr class="row-126 even">
+                  <td class="column-1">Madden NFL '99</td><td class="column-2">EA Sports</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-127 odd">
+                  <td class="column-1">Magical Tetris Challenge</td><td class="column-2">Capcom</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-128 even">
+                  <td class="column-1">Major League Baseball Featuring Ken Griffey, Jr.</td><td class="column-2">Nintendo</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-129 odd">
+                  <td class="column-1">Mario Golf</td><td class="column-2">Nintendo</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-130 even">
+                  <td class="column-1">Mario Kart 64</td><td class="column-2">Nintendo</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-131 odd">
+                  <td class="column-1">Mario Party</td><td class="column-2">Nintendo</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-132 even">
+                  <td class="column-1">Mario Party 2</td><td class="column-2">Nintendo</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-133 odd">
+                  <td class="column-1">Mario Party 3</td><td class="column-2">Nintendo</td><td class="column-3">2001</td>
+                </tr>
+                <tr class="row-134 even">
+                  <td class="column-1">Mario Tennis</td><td class="column-2">Nintendo</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-135 odd">
+                  <td class="column-1">Mega Man 64</td><td class="column-2">Capcom</td><td class="column-3">2001</td>
+                </tr>
+                <tr class="row-136 even">
+                  <td class="column-1">Mia Hamm Soccer 64</td><td class="column-2">SouthPeak Games</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-137 odd">
+                  <td class="column-1">Mickey's Speedway USA</td><td class="column-2">Nintendo</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-138 even">
+                  <td class="column-1">Micro Machines 64 Turbo</td><td class="column-2">Midway Games</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-139 odd">
+                  <td class="column-1">Midway's Greatest Arcade Hits: Volume 1</td><td class="column-2">Midway Games</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-140 even">
+                  <td class="column-1">Mike Piazza's Strike Zone</td><td class="column-2">GT Interactive Software</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-141 odd">
+                  <td class="column-1">Milo's Astro Lanes</td><td class="column-2">Crave Entertainment</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-142 even">
+                  <td class="column-1">Mischief Makers</td><td class="column-2">Nintendo</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-143 odd">
+                  <td class="column-1">Mission: Impossible</td><td class="column-2">Ocean Software</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-144 even">
+                  <td class="column-1">Monaco Grand Prix</td><td class="column-2">Ubisoft</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-145 odd">
+                  <td class="column-1">Monopoly</td><td class="column-2">Hasbro Interactive</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-146 even">
+                  <td class="column-1">Monster Truck Madness 64</td><td class="column-2">Rockstar Games</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-147 odd">
+                  <td class="column-1">Mortal Kombat 4</td><td class="column-2">Midway Games</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-148 even">
+                  <td class="column-1">Mortal Kombat Mythologies: Sub-Zero</td><td class="column-2">Midway Games</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-149 odd">
+                  <td class="column-1">Mortal Kombat Trilogy</td><td class="column-2">Midway Games</td><td class="column-3">1996</td>
+                </tr>
+                <tr class="row-150 even">
+                  <td class="column-1">Ms. Pac-Man: Maze Madness</td><td class="column-2">Namco</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-151 odd">
+                  <td class="column-1">Multi-Racing Championship</td><td class="column-2">Ocean Software</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-152 even">
+                  <td class="column-1">Mystical Ninja Starring Goemon</td><td class="column-2">Konami</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-153 odd">
+                  <td class="column-1">Nagano Winter Olympics '98</td><td class="column-2">Konami</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-154 even">
+                  <td class="column-1">Namco Museum 64</td><td class="column-2">Namco</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-155 odd">
+                  <td class="column-1">NASCAR 2000</td><td class="column-2">EA Sports</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-156 even">
+                  <td class="column-1">NASCAR '99</td><td class="column-2">EA Sports</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-157 odd">
+                  <td class="column-1">NBA Courtside 2 Featuring Kobe Bryant</td><td class="column-2">Nintendo</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-158 even">
+                  <td class="column-1">NBA Hangtime</td><td class="column-2">Midway Games</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-159 odd">
+                  <td class="column-1">NBA In the Zone 2000</td><td class="column-2">Konami</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-160 even">
+                  <td class="column-1">NBA In The Zone '98</td><td class="column-2">Konami</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-161 odd">
+                  <td class="column-1">NBA In The Zone '99</td><td class="column-2">Konami</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-162 even">
+                  <td class="column-1">NBA Jam 2000</td><td class="column-2">Acclaim</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-163 odd">
+                  <td class="column-1">NBA Jam '99</td><td class="column-2">Acclaim</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-164 even">
+                  <td class="column-1">NBA Live 2000</td><td class="column-2">EA Sports</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-165 odd">
+                  <td class="column-1">NBA Live '99</td><td class="column-2">EA Sports</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-166 even">
+                  <td class="column-1">NBA Showtime: NBA on NBC</td><td class="column-2">Midway Games</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-167 odd">
+                  <td class="column-1">New Tetris, The</td><td class="column-2">Nintendo</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-168 even">
+                  <td class="column-1">NFL Blitz</td><td class="column-2">Midway Games</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-169 odd">
+                  <td class="column-1">NFL Blitz 2000</td><td class="column-2">Midway Games</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-170 even">
+                  <td class="column-1">NFL Blitz 2001</td><td class="column-2">Midway Games</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-171 odd">
+                  <td class="column-1">NFL Blitz: Special Edition</td><td class="column-2">Midway Games</td><td class="column-3">2001</td>
+                </tr>
+                <tr class="row-172 even">
+                  <td class="column-1">NFL Quarterback Club 98</td><td class="column-2">Acclaim</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-173 odd">
+                  <td class="column-1">NFL Quarterback Club 2000</td><td class="column-2">Acclaim</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-174 even">
+                  <td class="column-1">NFL Quarterback Club 2001</td><td class="column-2">Acclaim</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-175 odd">
+                  <td class="column-1">NFL Quarterback Club '99</td><td class="column-2">Acclaim</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-176 even">
+                  <td class="column-1">NHL '99</td><td class="column-2">EA Sports</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-177 odd">
+                  <td class="column-1">NHL Blades of Steel '99</td><td class="column-2">Konami</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-178 even">
+                  <td class="column-1">NHL Breakaway '98</td><td class="column-2">Acclaim</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-179 odd">
+                  <td class="column-1">NHL Breakaway '99</td><td class="column-2">Acclaim</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-180 even">
+                  <td class="column-1">Nightmare Creatures</td><td class="column-2">Activision</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-181 odd">
+                  <td class="column-1">Nuclear Strike 64</td><td class="column-2">THQ</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-182 even">
+                  <td class="column-1">Off Road Challenge</td><td class="column-2">Midway Games</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-183 odd">
+                  <td class="column-1">Ogre Battle 64: Person of Lordly Caliber</td><td class="column-2">Atlus</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-184 even">
+                  <td class="column-1">Olympic Hockey '98</td><td class="column-2">Midway Games</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-185 odd">
+                  <td class="column-1">Paper Mario</td><td class="column-2">Nintendo</td><td class="column-3">2001</td>
+                </tr>
+                <tr class="row-186 even">
+                  <td class="column-1">Paperboy</td><td class="column-2">Midway Games</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-187 odd">
+                  <td class="column-1">Penny Racers</td><td class="column-2">THQ</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-188 even">
+                  <td class="column-1">Perfect Dark</td><td class="column-2">Nintendo</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-189 odd">
+                  <td class="column-1">PGA European Tour</td><td class="column-2">Infogrames</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-190 even">
+                  <td class="column-1">Pilotwings 64</td><td class="column-2">Nintendo</td><td class="column-3">1996</td>
+                </tr>
+                <tr class="row-191 odd">
+                  <td class="column-1">Pokémon Puzzle League</td><td class="column-2">Nintendo</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-192 even">
+                  <td class="column-1">Pokémon Snap</td><td class="column-2">Nintendo</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-193 odd">
+                  <td class="column-1">Pokémon Stadium</td><td class="column-2">Nintendo</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-194 even">
+                  <td class="column-1">Pokémon Stadium 2</td><td class="column-2">Nintendo</td><td class="column-3">2001</td>
+                </tr>
+                <tr class="row-195 odd">
+                  <td class="column-1">Polaris SnoCross</td><td class="column-2">Vatical Entertainment</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-196 even">
+                  <td class="column-1">Power Rangers: Lightspeed Rescue</td><td class="column-2">THQ</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-197 odd">
+                  <td class="column-1">Powerpuff Girls: Chemical X-Traction, The</td><td class="column-2">Bam Entertainment</td><td class="column-3">2001</td>
+                </tr>
+                <tr class="row-198 even">
+                  <td class="column-1">Quake</td><td class="column-2">Midway Games</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-199 odd">
+                  <td class="column-1">Quake II</td><td class="column-2">Activision</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-200 even">
+                  <td class="column-1">Quest 64</td><td class="column-2">THQ</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-201 odd">
+                  <td class="column-1">Rally Challenge 2000</td><td class="column-2">SouthPeak Games</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-202 even">
+                  <td class="column-1">Rampage 2: Universal Tour</td><td class="column-2">Midway Games</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-203 odd">
+                  <td class="column-1">Rampage World Tour</td><td class="column-2">Midway Games</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-204 even">
+                  <td class="column-1">Rat Attack!</td><td class="column-2">Mindscape</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-205 odd">
+                  <td class="column-1">Rayman 2: The Great Escape</td><td class="column-2">Ubisoft</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-206 even">
+                  <td class="column-1">Razor Freestyle Scooter</td><td class="column-2">Crave Entertainment</td><td class="column-3">2001</td>
+                </tr>
+                <tr class="row-207 odd">
+                  <td class="column-1">Re-Volt</td><td class="column-2">Acclaim</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-208 even">
+                  <td class="column-1">Ready 2 Rumble Boxing</td><td class="column-2">Midway Games</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-209 odd">
+                  <td class="column-1">Ready 2 Rumble Boxing: Round 2</td><td class="column-2">Midway Games</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-210 even">
+                  <td class="column-1">Resident Evil 2</td><td class="column-2">Capcom</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-211 odd">
+                  <td class="column-1">Ridge Racer 64</td><td class="column-2">Nintendo</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-212 even">
+                  <td class="column-1">Road Rash 64</td><td class="column-2">THQ</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-213 odd">
+                  <td class="column-1">Roadsters</td><td class="column-2">Titus Software</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-214 even">
+                  <td class="column-1">Robotron 64</td><td class="column-2">Crave Entertainment</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-215 odd">
+                  <td class="column-1">Rocket: Robot on Wheels</td><td class="column-2">Ubisoft</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-216 even">
+                  <td class="column-1">Rugrats in Paris: The Movie</td><td class="column-2">THQ</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-217 odd">
+                  <td class="column-1">Rugrats: Scavenger Hunt</td><td class="column-2">THQ</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-218 even">
+                  <td class="column-1">Rush 2: Extreme Racing USA</td><td class="column-2">Midway Games</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-219 odd">
+                  <td class="column-1">S.C.A.R.S.</td><td class="column-2">Ubisoft</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-220 even">
+                  <td class="column-1">San Francisco Rush 2049</td><td class="column-2">Midway Games</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-221 odd">
+                  <td class="column-1">San Francisco Rush: Extreme Racing</td><td class="column-2">Midway Games</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-222 even">
+                  <td class="column-1">Scooby-Doo! Classic Creep Capers</td><td class="column-2">THQ</td><td class="column-3">2001</td>
+                </tr>
+                <tr class="row-223 odd">
+                  <td class="column-1">Sesame Street: Elmo's Letter Adventure</td><td class="column-2">NewKidCo</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-224 even">
+                  <td class="column-1">Sesame Street: Elmo's Number Journey</td><td class="column-2">NewKidCo</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-225 odd">
+                  <td class="column-1">Shadow Man</td><td class="column-2">Acclaim</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-226 even">
+                  <td class="column-1">Shadowgate 64: Trials of the Four Towers</td><td class="column-2">Kemco</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-227 odd">
+                  <td class="column-1">Snowboard Kids</td><td class="column-2">Atlus</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-228 even">
+                  <td class="column-1">Snowboard Kids 2</td><td class="column-2">Atlus</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-229 odd">
+                  <td class="column-1">South Park</td><td class="column-2">Acclaim</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-230 even">
+                  <td class="column-1">South Park Rally</td><td class="column-2">Acclaim</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-231 odd">
+                  <td class="column-1">South Park: Chef's Luv Shack</td><td class="column-2">Acclaim</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-232 even">
+                  <td class="column-1">Space Invaders</td><td class="column-2">Activision</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-233 odd">
+                  <td class="column-1">Space Station Silicon Valley</td><td class="column-2">Take-Two</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-234 even">
+                  <td class="column-1">Spider-Man</td><td class="column-2">Activision</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-235 odd">
+                  <td class="column-1">Star Fox 64</td><td class="column-2">Nintendo</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-236 even">
+                  <td class="column-1">Star Soldier: Vanishing Earth</td><td class="column-2">Electro Brain</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-237 odd">
+                  <td class="column-1">Star Wars Episode I: Racer</td><td class="column-2">LucasArts</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-238 even">
+                  <td class="column-1">Star Wars: Episode I: Battle for Naboo</td><td class="column-2">LucasArts</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-239 odd">
+                  <td class="column-1">Star Wars: Rogue Squadron</td><td class="column-2">LucasArts</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-240 even">
+                  <td class="column-1">Star Wars: Shadows of the Empire</td><td class="column-2">LucasArts</td><td class="column-3">1996</td>
+                </tr>
+                <tr class="row-241 odd">
+                  <td class="column-1">Starcraft 64</td><td class="column-2">Blizzard Entertainment</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-242 even">
+                  <td class="column-1">Starshot: Space Circus Fever</td><td class="column-2">Infogrames</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-243 odd">
+                  <td class="column-1">Stunt Racer 64</td><td class="column-2">Midway Games</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-244 even">
+                  <td class="column-1">Super Bowling</td><td class="column-2">UFO Interactive Games</td><td class="column-3">2001</td>
+                </tr>
+                <tr class="row-245 odd">
+                  <td class="column-1">Super Mario 64</td><td class="column-2">Nintendo</td><td class="column-3">1996</td>
+                </tr>
+                <tr class="row-246 even">
+                  <td class="column-1">Super Smash Bros.</td><td class="column-2">Nintendo</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-247 odd">
+                  <td class="column-1">Supercross 2000</td><td class="column-2">EA Sports</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-248 even">
+                  <td class="column-1">Superman</td><td class="column-2">Titus Software</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-249 odd">
+                  <td class="column-1">Tarzan</td><td class="column-2">Activision</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-250 even">
+                  <td class="column-1">Tetrisphere</td><td class="column-2">Nintendo</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-251 odd">
+                  <td class="column-1">Tigger's Honey Hunt</td><td class="column-2">NewKidCo</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-252 even">
+                  <td class="column-1">Tom and Jerry in Fists of Furry</td><td class="column-2">NewKidCo</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-253 odd">
+                  <td class="column-1">Tom Clancy's Rainbow Six</td><td class="column-2">Red Storm Entertainment</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-254 even">
+                  <td class="column-1">Tonic Trouble</td><td class="column-2">Ubisoft</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-255 odd">
+                  <td class="column-1">Tony Hawk's Pro Skater</td><td class="column-2">Activision</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-256 even">
+                  <td class="column-1">Tony Hawk's Pro Skater 2</td><td class="column-2">Activision</td><td class="column-3">2001</td>
+                </tr>
+                <tr class="row-257 odd">
+                  <td class="column-1">Tony Hawk's Pro Skater 3</td><td class="column-2">Activision</td><td class="column-3">2002</td>
+                </tr>
+                <tr class="row-258 even">
+                  <td class="column-1">Top Gear Overdrive</td><td class="column-2">Kemco</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-259 odd">
+                  <td class="column-1">Top Gear Rally</td><td class="column-2">Kemco</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-260 even">
+                  <td class="column-1">Top Gear Rally 2</td><td class="column-2">Kemco</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-261 odd">
+                  <td class="column-1">Top Gear: Hyper Bike</td><td class="column-2">Kemco</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-262 even">
+                  <td class="column-1">Toy Story 2: Buzz Lightyear to the Rescue</td><td class="column-2">Activision</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-263 odd">
+                  <td class="column-1">Transformers: Beast Wars Transmetals</td><td class="column-2">Bam Entertainment</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-264 even">
+                  <td class="column-1">Triple Play 2000</td><td class="column-2">EA Sports</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-265 odd">
+                  <td class="column-1">Turok 2: Seeds of Evil</td><td class="column-2">Acclaim</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-266 even">
+                  <td class="column-1">Turok 3: Shadow of Oblivion</td><td class="column-2">Acclaim</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-267 odd">
+                  <td class="column-1">Turok: Dinosaur Hunter</td><td class="column-2">Acclaim</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-268 even">
+                  <td class="column-1">Turok: Rage Wars</td><td class="column-2">Acclaim</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-269 odd">
+                  <td class="column-1">Twisted Edge: Extreme Snowboarding</td><td class="column-2">Midway Games</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-270 even">
+                  <td class="column-1">V-Rally Edition '99</td><td class="column-2">Infogrames</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-271 odd">
+                  <td class="column-1">Vigilante 8</td><td class="column-2">Activision</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-272 even">
+                  <td class="column-1">Vigilante 8: 2nd Offense</td><td class="column-2">Activision</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-273 odd">
+                  <td class="column-1">Virtual Chess 64</td><td class="column-2">Titus Software</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-274 even">
+                  <td class="column-1">Virtual Pool 64</td><td class="column-2">Crave Entertainment</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-275 odd">
+                  <td class="column-1">Waialae Country Club: True Golf Classics</td><td class="column-2">Nintendo</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-276 even">
+                  <td class="column-1">War Gods</td><td class="column-2">Midway Games</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-277 odd">
+                  <td class="column-1">Wave Race 64</td><td class="column-2">Nintendo</td><td class="column-3">1996</td>
+                </tr>
+                <tr class="row-278 even">
+                  <td class="column-1">Wayne Gretzky's 3D Hockey</td><td class="column-2">Midway Games</td><td class="column-3">1996</td>
+                </tr>
+                <tr class="row-279 odd">
+                  <td class="column-1">Wayne Gretzky's 3D Hockey '98</td><td class="column-2">Midway Games</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-280 even">
+                  <td class="column-1">WCW Backstage Assault</td><td class="column-2">Electronic Arts</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-281 odd">
+                  <td class="column-1">WCW Mayhem</td><td class="column-2">EA Sports</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-282 even">
+                  <td class="column-1">WCW Nitro</td><td class="column-2">THQ</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-283 odd">
+                  <td class="column-1">WCW vs. nWo: World Tour</td><td class="column-2">THQ</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-284 even">
+                  <td class="column-1">WCW/nWo Revenge</td><td class="column-2">THQ</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-285 odd">
+                  <td class="column-1">Wetrix</td><td class="column-2">Ocean Software</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-286 even">
+                  <td class="column-1">Wheel of Fortune</td><td class="column-2">GameTek</td><td class="column-3">1997</td>
+                </tr>
+                <tr class="row-287 odd">
+                  <td class="column-1">WinBack: Covert Operations</td><td class="column-2">Koei</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-288 even">
+                  <td class="column-1">WipeOut 64</td><td class="column-2">Midway Games</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-289 odd">
+                  <td class="column-1">World Cup '98</td><td class="column-2">EA Sports</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-290 even">
+                  <td class="column-1">World Driver Championship</td><td class="column-2">Midway Games</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-291 odd">
+                  <td class="column-1">Worms: Armageddon</td><td class="column-2">Infogrames</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-292 even">
+                  <td class="column-1">WWF Attitude</td><td class="column-2">Acclaim</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-293 odd">
+                  <td class="column-1">WWF No Mercy</td><td class="column-2">THQ</td><td class="column-3">2000</td>
+                </tr>
+                <tr class="row-294 even">
+                  <td class="column-1">WWF War Zone</td><td class="column-2">Acclaim</td><td class="column-3">1998</td>
+                </tr>
+                <tr class="row-295 odd">
+                  <td class="column-1">WWF WrestleMania 2000</td><td class="column-2">THQ</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-296 even">
+                  <td class="column-1">Xena: Warrior Princess - The Talisman of Fate</td><td class="column-2">Titus Software</td><td class="column-3">1999</td>
+                </tr>
+                <tr class="row-297 odd">
+                  <td class="column-1">Yoshi's Story</td><td class="column-2">Nintendo</td><td class="column-3">1998</td>
+                </tr>
+                </tbody>
+              </table>
+
+
+
+
+</table>  <!-- MAIN OUTER TABLE - END -->
+      </div>
+
+
+      <!--      Return to Top -->
+      <div class="return-to-top">
+        <a href="#top-link" id="top">Return to Top</a>
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+    <!-- ZELDA LINKS -->
+    <div class="zelda-links">
+      <h2 class="links">Zelda Links</h2>
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda" target="_blank">
+        <img src="img/G01.png" alt="zelda1">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/Zelda_II:_The_Adventure_of_Link" target="_blank">
+        <img src="img/G02.png" alt="zelda2">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_A_Link_to_the_Past" target="_blank">
+        <img src="img/G03.png" alt="lttp">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Link%27s_Awakening" target="_blank">
+        <img src="img/G04.png" alt="awakening">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Ocarina_of_Time" target="_blank">
+        <img src="img/G05.png" alt="oot">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Majora%27s_Mask" target="_blank">
+        <img src="img/G06.png" alt="mm">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Oracle_of_Seasons" target="_blank">
+        <img src="img/G07.png" alt="seasons">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Oracle_of_Ages" target="_blank">
+        <img src="img/G08.png" alt="ages">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_The_Wind_Waker" target="_blank">
+        <img src="img/G09.png" alt="ww">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_The_Minish_Cap" target="_blank">
+        <img src="img/G10.png" alt="minish">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Twilight_Princess" target="_blank">
+        <img src="img/G11.png" alt="tp">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Phantom_Hourglass" target="_blank">
+        <img src="img/G12.png" alt="hourglass">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Spirit_Tracks" target="_blank">
+        <img src="img/G13.png" alt="tracks">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Skyward_Sword" target="_blank">
+        <img src="img/G14.png" alt="ss">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_A_Link_Between_Worlds" target="_blank">
+        <img src="img/G15.png" alt="linkbetweenworlds">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild" target="_blank">
+        <img class="botw" src="img/G16.png" alt="botw">
+      </a>
+
+      <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom" target="_blank">
+        <img class="next-zelda" src="img/G17.png" alt="next">
+      </a>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+<!-- BOTTOM BAR -->
+<div class="bottom-bar">
+  <span id="bottom-bar-text">© 2016-2023 •
+    <a href="#">Game Library.com</a> •
+    <a href="mailto:retrocastlenj@gmail.com">Contact</a> •
+    <a href="#">Privacy</a></span>
+  <!--  <input type="image" src="img/oot.png" alt="ocarina" class="bottom-bar-images" onclick="playMusic()">-->
+</div>
+
+
+<!-- Javascript-->
+<script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+</script>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+
+
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
+
+<!--Make sure to add section of Live Notes (Games to Play Next Month)-->
+<!--Make sure to use Opera GX sliding style for games played-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<blockquote>-->
+<!--  <p class="text-title" align="center">Games List by Image - Nintendo Entertainment System </p>-->
+<!--</blockquote>-->
+<!--<blockquote>-->
+
+
+
+
+
+
+<!--  <table width="800" height="40" border="0" background="site/imagelist_bkg.png">-->
+<!--    <tbody><tr>-->
+<!--      <td class="text-title">Platformer</td>-->
+<!--    </tr>-->
+<!--    </tbody></table>-->
+
+
+<!--  <p>&nbsp;</p>-->
+<!--  <p align="center"><a href="#top"><img src="nes/imagelist/mario_jump.gif" width="64" height="128" border="0"></a></p>-->
+<!--  <p>&nbsp;</p>-->
+<!--  <p>&nbsp;</p>-->
+<!--</blockquote>-->
