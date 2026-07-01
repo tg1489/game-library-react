@@ -62,7 +62,7 @@
   border-top: none;
   border-left: none;
   border-right: 1px solid #873838;
-  background-color: #ab3939;
+  background: linear-gradient(to bottom, #963131, #ab3939 40%, #ab3939 60%, #963131);
   color: #FFF;
   text-shadow: #000 1px 0 1px;
   box-shadow: 1px 0 4px -4px #fd6b6b;
@@ -79,7 +79,7 @@
 }
 
 .nav-button:hover {
-  background-color: #000;
+  background: #000;
   opacity: 40%;
   z-index: 9999;
 }
