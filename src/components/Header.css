@@ -45,6 +45,7 @@
   height: 34px;
   line-height: 1.2;
   padding-left: 10px;
+  padding-right: 10px;
   text-decoration: none;
   transition-duration: 0.4s;
   z-index: 9999;
