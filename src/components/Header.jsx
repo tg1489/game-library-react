@@ -27,7 +27,7 @@ export default function Header() {
           <NavLink
             key={tab.path}
             to={tab.path}
-            className={({ isActive }) => `tab ${isActive ? 'tab-active' : ''}`}
+            className={({ isActive }) => `nav-button ${isActive ? 'nav-button-active' : ''}`}
           >
             {tab.label}
           </NavLink>
