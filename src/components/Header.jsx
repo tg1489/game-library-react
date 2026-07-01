@@ -3,12 +3,12 @@ import './Header.css'
 import banner from '../assets/banner.png'
 
 const tabs = [
-  { label: 'Home', path: '/' },
-  { label: 'Add', path: '/add' },
-  { label: 'Year', path: '/year' },
-  { label: 'Records', path: '/records' },
-  { label: 'WWE', path: '/wwe' },
-  { label: 'Notes', path: '/notes' },
+  { label: 'Home', path: '/', cls: 'nav-button' },
+  { label: 'Add', path: '/add', cls: 'nav-button2' },
+  { label: 'Year', path: '/year', cls: 'nav-button3' },
+  { label: 'Records', path: '/records', cls: 'nav-button4' },
+  { label: 'WWE', path: '/wwe', cls: 'nav-button5' },
+  { label: 'Notes', path: '/notes', cls: 'nav-button6' },
 ]
 
 export default function Header() {
@@ -22,12 +22,13 @@ export default function Header() {
           <img src={banner} alt="Game Library" className="header-banner-img" />
         </Link>
       </div>
-      <nav className="header-tabs">
+       <nav className="header-tabs">
         {tabs.map((tab) => (
           <NavLink
             key={tab.path}
             to={tab.path}
-            className={({ isActive }) => `nav-button ${isActive ? 'nav-button-active' : ''}`}
+            style={{ textDecoration: 'none' }}
+            className={({ isActive }) => `${tab.cls} ${isActive ? 'tab-active' : ''}`}
           >
             {tab.label}
           </NavLink>

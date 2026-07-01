@@ -1,4 +1,8 @@
 .header {
+  min-height: 0px;
+  background-color: #FFF;
+  background-position: center;
+  border-bottom: 1px solid #000;
   width: 100%;
 }
 
@@ -20,8 +24,7 @@
   box-shadow: 1px 0 15px -4px black, -1px 0 8px -4px black;
 }
 
-.header-greeting,
-.header-tabs {
+.header-greeting {
   box-shadow: 1px 0 15px -4px black, -1px 0 8px -4px black;
 }
 
@@ -36,9 +39,10 @@
 }
 
 .header-tabs {
-  background-color: #aa3939;
-  display: flex;
-  flex-direction: row;
+  background-color: #ab3939;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1168px;
   border-bottom: 1px solid #000;
   height: 34px;
   line-height: 1.2;
@@ -57,12 +61,6 @@
   width: 80px;
   border-radius: 0;
   border: #ab3939;
-  border-right-width: medium;
-  border-right-style: none;
-  border-right-color: rgb(171, 57, 57);
-  border-left-width: medium;
-  border-left-style: none;
-  border-left-color: rgb(171, 57, 57);
   background-color: #ab3939;
   border-right: 0 solid #873838;
   border-left: 1px solid #873838;
@@ -70,16 +68,18 @@
   text-shadow: #000 1px 0 1px;
   padding: 8px;
   text-decoration: none;
-  font-size: 16px;
   font-family: "Roboto Condensed", Rockwell, serif;
-  transition: background-color 0.3s;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .nav-button:hover {
-  background-color: #873838;
+  background-color: #000;
+  opacity: 40%;
+  z-index: 9999;
 }
 
-.nav-button-active {
+.tab-active {
   font-weight: bold;
 }
 
