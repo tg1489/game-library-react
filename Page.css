@@ -1,0 +1,249 @@
+.page {
+  padding: 1rem;
+}
+
+.page-title {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.game-input-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.game-label {
+  color: rgb(102, 102, 102);
+  font-family: "Adobe Fangsong Std R", sans-serif, "Roboto Condensed", serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  padding-right: 10px;
+  text-transform: uppercase;
+}
+
+.game-input {
+  padding: 0.5rem 0.75rem;
+  font-size: 20px;
+  color: rgb(0, 0, 0) !important;
+  font-family: "Adobe Fangsong Std R", "Roboto Condensed", sans-serif, serif !important;
+  font-weight: 400 !important;
+  line-height: 27px !important;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background-color: white;
+  margin: 0;
+  overflow-x: clip;
+  overflow-y: clip;
+  text-transform: none !important;
+  transition: border-color 0.2s ease;
+}
+
+.game-input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.add-game {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "Adobe Fangsong Std R", sans-serif, "Roboto Condensed", serif;
+  font-size: 20px;
+  color: rgb(102, 102, 102);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.left-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.add-game label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.switcher {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 100px;
+  height: 4px;
+  line-height: 40px;
+  margin: 5px;
+  font-size: 16px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.switcher input {
+  display: none;
+}
+
+.send-button {
+  appearance: button;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(171, 57, 57);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  border-bottom-color: rgb(135, 56, 56);
+  border-bottom-style: outset;
+  border-left-color: rgb(135, 56, 56);
+  border-left-style: outset;
+  border-right-color: rgb(135, 56, 56);
+  border-right-style: outset;
+  border-top-color: rgb(135, 56, 56);
+  border-top-style: outset;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  height: 50px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 0px;
+  margin-top: 70px;
+  overflow-x: visible;
+  overflow-y: visible;
+  text-shadow: none;
+  text-transform: none;
+  width: 100px;
+}
+
+/* Checkbox styles from checkbox.css */
+.demo {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 20px;
+  color: #666;
+  text-align: center;
+}
+
+.demo__content {
+  text-align: left;
+  display: block;
+}
+
+.demo__title {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+
+
+.switcher__indicator::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #d5d5d5;
+  border-radius: 50%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-animation-name: pulsein;
+          animation-name: pulsein;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+}
+
+.switcher__indicator::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 80px;
+  height: 8px;
+  background-color: #d5d5d5;
+  border-radius: 10px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+input:checked + .switcher__indicator::after {
+  background-color: #ab3939;
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
+  -webkit-animation-name: pulseout;
+          animation-name: pulseout;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+}
+
+input:checked + .switcher__indicator::before {
+  background-color: #ab3939;
+}
+
+input:disabled + .switcher__indicator::after, input:disabled + .switcher__indicator::before {
+  background-color: #e5e5e5;
+}
+
+@-webkit-keyframes pulsein {
+  0%, 100% {
+    top: 0px;
+    height: 40px;
+    width: 40px;
+  }
+  50% {
+    top: 6px;
+    height: 28px;
+    width: 52px;
+  }
+}
+
+@keyframes pulsein {
+  0%, 100% {
+    top: 0px;
+    height: 40px;
+    width: 40px;
+  }
+  50% {
+    top: 6px;
+    height: 28px;
+    width: 52px;
+  }
+}
+
+@-webkit-keyframes pulseout {
+  0%, 100% {
+    top: 0px;
+    height: 40px;
+    width: 40px;
+  }
+  50% {
+    top: 6px;
+    height: 28px;
+    width: 52px;
+  }
+}
+
+@keyframes pulseout {
+  0%, 100% {
+    top: 0px;
+    height: 40px;
+    width: 40px;
+  }
+  50% {
+    top: 6px;
+    height: 28px;
+    width: 52px;
+  }
+}

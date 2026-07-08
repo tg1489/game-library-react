@@ -1,0 +1,62 @@
+.zelda-links {
+  border: 1px solid var(--border);
+}
+
+.links {
+  background: linear-gradient(to bottom, #963131, #ab3939 40%, #ab3939 60%, #963131);
+  box-shadow: 1px 0 4px -4px #fd6b6b, var(--shadow);
+  color: rgb(238, 238, 238);
+  font-family: "Roboto Condensed", Rockwell, serif;
+  font-size: 18px;
+  line-height: 25.2px;
+  margin-top: 0px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  position: relative;
+  text-align: center;
+  text-shadow: rgb(34, 34, 34) 1px 1px 2px;
+}
+
+.zelda-links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 8px;
+  gap: 8px;
+}
+
+.zelda-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #EEE;
+  width: 70px;
+}
+
+.zelda-link-img {
+  width: 64px;
+  height: 64px;
+}
+
+.zelda-link-label {
+  display: none;
+}
+
+.botw {
+  padding-top: 10px;
+}
+
+.next-zelda {
+  padding-top: 10px;
+}
+
+.botw {
+  padding-top: 10px;
+}
+
+.next-zelda {
+  padding-top: 10px;
+}
